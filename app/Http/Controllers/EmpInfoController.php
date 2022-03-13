@@ -20,7 +20,7 @@ class EmpInfoController extends Controller
 
         $emp_info   =   EmployeeInfo::where('empno', $empno)->first();
         $entity01   =   $this->company($emp_info->entity01);
-
+ 
         $info   =   array(
                         'empno'         =>  $emp_info->empno,
                         'name'          =>  $emp_info->fname . ' ' . $emp_info->lname,
