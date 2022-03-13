@@ -13,7 +13,7 @@ use PDF;
 class HealthCheckList extends Controller
 {
     //
-
+ test
     public function reportBydate(){
 
         $checklist  =   HealthDeclaration::distinct()->orderBy('txndate', 'desc')->get(['txndate']);
