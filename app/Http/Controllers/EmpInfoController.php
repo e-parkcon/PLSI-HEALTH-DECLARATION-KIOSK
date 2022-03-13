@@ -93,4 +93,7 @@ class EmpInfoController extends Controller
         return Company::where('entity01', $entity01)->first();
     }
 
+    public function test(){
+        return 'test';
+    }
 }
